@@ -77,7 +77,7 @@ cv2.setMouseCallback("Media Board", drawing)
 
 
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 with mp_hands.Hands(
     model_complexity=0,
@@ -133,7 +133,6 @@ with mp_hands.Hands(
         ix, iy = x, y
 
 
-    
     cv2.imshow('Hand Landmarks', image)
     # mask[200:250, 200:250] = operationIcon
     MediaBoard = cv2.bitwise_and(board, MediaBoard)
