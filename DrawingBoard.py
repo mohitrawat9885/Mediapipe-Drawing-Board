@@ -57,12 +57,12 @@ def drawing(event, x, y, flags, param):
 board = np.ones((480, 640, 3), np.uint8)
 board.fill(255)
 
-eraser = cv2.imread("./eraser2.png")
+eraser = cv2.imread("./eraser.png")
 
 eraser = cv2.resize(eraser, (48,48));
 eraser = cv2.copyMakeBorder(eraser, 1,  1, 1, 1, cv2.BORDER_CONSTANT, None, value=0)
 
-pencile = cv2.imread("./pencile2.png")
+pencile = cv2.imread("./pencile.png")
 
 pencile = cv2.resize(pencile, (48,48));
 pencile = cv2.copyMakeBorder(pencile, 1,  1, 1, 1, cv2.BORDER_CONSTANT, None, value=0)
